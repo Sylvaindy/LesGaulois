@@ -22,13 +22,15 @@ public class Romain {
 	}
 	
 	public void recevoirCoup(int forceCoup) {
+		assert force>0;
+		int t=force;
 		force -= forceCoup;
 		if (force > 0) {
 			parler("Aie");
 		}else {
 			parler("J'abandonne...");
 		}
-		
+		assert force<t;
 	}
 	
 	public static void main(String[] args) {

@@ -29,7 +29,7 @@ public class Scenario {
 		
 		minus.parler("UN GAU... UN GAUGAU...");
 		
-		asterix.frapper(minus,effetPotion);
+		asterix.frapper(minus, effetPotion);
 
 		asterix.frapper(minus);
 
