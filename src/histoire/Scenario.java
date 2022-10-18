@@ -18,22 +18,24 @@ public class Scenario {
 		
 		panoramix.parler("Je vais aller préparer une petite potion...");
 		
-		panoramix.preparePotion();
+		int forcePotion =panoramix.preparePotion();
 		
 		panoramix.booster(obelix);
 		
 		obelix.parler("Par Bélénos, ce n'est pas juste !");
+		
+		asterix.parler("Merci Druide, je sens que ma force est " + forcePotion + " fois décuplée.");
 	
 		asterix.parler("Bonjour à tous");
 		
 		
 		minus.parler("UN GAU... UN GAUGAU...");
 		
-		asterix.frapper(minus, effetPotion);
+		asterix.frapper(minus, forcePotion);
 
-		asterix.frapper(minus);
+		asterix.frapper(minus,forcePotion);
 
-		asterix.frapper(minus);		
+		asterix.frapper(minus, forcePotion);		
 	}
 
 }

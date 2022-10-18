@@ -27,7 +27,7 @@ public class Druide {
 		return "Le druide " + nom +" : ";
 	}
 	
-	public void preparePotion() {
+	public int preparePotion() {
 		Random rnd = new Random();
 		forcePotion=rnd.nextInt(effetPotionMax);
 		while ((effetPotionMin > forcePotion) || (forcePotion > effetPotionMax)) {
@@ -39,6 +39,7 @@ public class Druide {
 		else {
 			parler("Je n'ai pas trouvé tous les ingrédients, ma potion est seulement de force " + forcePotion);
 		}
+		return forcePotion;
 	}
 	
 	public void booster(Gaulois gaulois) {
