@@ -27,7 +27,7 @@ public class Druide {
 		return "Le druide " + nom +" : ";
 	}
 	
-	public int preparePotion() {
+	public int preparerPotion() {
 		Random rnd = new Random();
 		forcePotion=rnd.nextInt(effetPotionMax);
 		while ((effetPotionMin > forcePotion) || (forcePotion > effetPotionMax)) {
@@ -50,7 +50,7 @@ public class Druide {
 	
 	public static void main(String[] args) {
 		Druide panoramix = new Druide("Panoramix",5,10);
-		panoramix.preparePotion();
+		panoramix.preparerPotion();
 	}
 	
 }

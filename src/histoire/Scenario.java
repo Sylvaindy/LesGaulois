@@ -18,7 +18,7 @@ public class Scenario {
 		
 		panoramix.parler("Je vais aller préparer une petite potion...");
 		
-		int forcePotion =panoramix.preparePotion();
+		int forcePotion =panoramix.preparerPotion();
 		
 		panoramix.booster(obelix);
 		
@@ -31,11 +31,11 @@ public class Scenario {
 		
 		minus.parler("UN GAU... UN GAUGAU...");
 		
-		asterix.frapper(minus, forcePotion);
+		asterix.frapper(minus);
 
-		asterix.frapper(minus,forcePotion);
+		asterix.frapper(minus);
 
-		asterix.frapper(minus, forcePotion);		
+		asterix.frapper(minus);		
 	}
 
 }
