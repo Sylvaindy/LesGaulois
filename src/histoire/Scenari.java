@@ -4,6 +4,7 @@ import personnages.Druide;
 import personnages.Equipement;
 import personnages.Gaulois;
 import personnages.Romain;
+import personnages.Musee;
 
 public class Scenari {
 
@@ -33,9 +34,9 @@ public class Scenari {
 		
 //		Partie a decommenter
 		
-//		Musee musee = new Musee();
-//		asterix.faireUneDonnation(musee);
-
+		Musee musee = new Musee();
+		asterix.faireUneDonnation(musee);
+		musee.extraireInstructionsCaml(asterix);
 	}
 
 }

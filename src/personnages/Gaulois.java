@@ -39,23 +39,24 @@ public class Gaulois {
       parler("Merci Druide, je sens que ma force est " + forcePotion + " fois décuplée.");
    }
 
-   //public void faireUneDonnation(Musee musee) {
-     // if (nbTrophees != 0) {
-       //  String texte = "Je donne au musee tous mes trophees : ";
-         //for (int i = 0; i < nbTrophees; i++) {
-           // texte += "\n- " + trophees[i];
-            //musee.donnerTrophees(this, trophees[i]);
-            //trophees[i] = null;
-      //   }
-        // nbTrophees = 0;
-        // parler(texte);
-     // }
-   //}
+   public void faireUneDonnation(Musee musee) {
+      if (nbTrophees != 0) {
+         String texte = "Je donne au musee tous mes trophees : ";
+         for (int i = 0; i < nbTrophees; i++) {
+            texte += "\n- " + trophees[i];
+            musee.donnerTrophees(this, trophees[i]);
+            trophees[i] = null;
+         }
+         nbTrophees = 0;
+         parler(texte);
+      }
+   }
 
 // @Override
 // public String toString() {
 //    return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
 // }
+
 
    public static void main(String[] args) {
       Gaulois asterix = new Gaulois("Astérix", 8);

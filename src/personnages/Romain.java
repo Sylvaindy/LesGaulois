@@ -65,7 +65,7 @@ public class Romain {
          texte += resistanceEquipement + "!";
       }
       parler(texte);
-      forceCoup =- resistanceEquipement;
+      forceCoup -= resistanceEquipement;
       if (forceCoup < 0) {
          forceCoup = 0;
       }
@@ -111,12 +111,12 @@ public class Romain {
    }
 
    public static void main(String[] args) {
-      Romain romain = new Romain("Minus", -6);
-      System.out.println("\nTest méthode prendreParole");
+      Romain romain = new Romain("Minus", 6);
+      //System.out.println("\nTest méthode prendreParole");
       System.out.println(romain.prendreParole());
-      System.out.println("\nTest méthode parler");
+      //System.out.println("\nTest méthode parler");
       romain.parler("Bonjour");
-      System.out.println("\nTest méthode recevoirCoup");
+      //System.out.println("\nTest méthode recevoirCoup");
       romain.recevoirCoup(2);
       System.out.println(Equipement.CASQUE);
       System.out.println(Equipement.BOUCLIER);
